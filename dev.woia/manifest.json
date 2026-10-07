@@ -1,0 +1,33 @@
+{
+  "schema": "dev.woia.provider-manifest/v1",
+  "name": "woia-communications",
+  "version": "0.5.0",
+  "capability": "communications",
+  "authoring_profile": "thin",
+  "origin": "native",
+  "actions": [
+    "communication.external.receive",
+    "communication.external.send",
+    "communication.internal.send",
+    "communication.status.observe",
+    "communication.effect.reconcile",
+    "communication.handoff",
+    "communication.takeover"
+  ],
+  "source_contracts": {
+    "repository": "Turpial-AI-Academy/woia-real-estate",
+    "commit": "eb0a7278188b2f9968e21ed4299f08184d864cac",
+    "documents": [
+      "docs/21-capability-provider-map.md",
+      "docs/22-canonical-domain-data-contract.md",
+      "docs/24-authority-finance-final-contract.md",
+      "docs/25-e2e-and-definition-of-done.md"
+    ]
+  },
+  "qualification": {
+    "domain_tests": "LOCAL_SYNTHETIC",
+    "live_adapter": "NOT_RUN",
+    "operator_e2e": "NOT_RUN",
+    "production_ready": false
+  }
+}

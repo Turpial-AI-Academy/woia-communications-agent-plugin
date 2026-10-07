@@ -1,42 +1,15 @@
 # woia-communications
 
-Portable Agent Plugin for Durable human-channel ingress outbound status and reconciliation with deterministic recipient guards.
+Durable human-channel ingress/outbound with Customer Service-only external execution and contextual authenticated staff recipient guards.
 
-## Capability
+Native thin shared provider, version 0.5.0. Agent Plugin 1.0.0 distribution; no orchestrator, MCP server or chosen database.
 
-~~~text
-DISCOVER -> DECIDE -> IMPLEMENT -> VALIDATE -> REPORT
-~~~
+- [Skill](skills/woia-communications/SKILL.md)
+- [Contract](skills/woia-communications/references/CONTRACT.md)
+- [Ports](skills/woia-communications/references/PORTS.md)
 
-The plugin adapts to the repository it operates on without requiring the consumer to adopt WOIA's authoring toolchain.
+Actions: `communication.external.receive`, `communication.external.send`, `communication.internal.send`, `communication.status.observe`, `communication.effect.reconcile`, `communication.handoff`, `communication.takeover`.
 
-## Portable package
+Run `node --test tests/domain.test.mjs` for capability regression, `mise run ci:fast` for repository checks. Commit the candidate, then run `mise run plugin:certify-thin --repo <absolute-provider-path>` from Ecosystem v0.5.4.
 
-~~~text
-plugin.json
-README.md
-CHANGELOG.md
-LICENSE
-skills/**
-# optional source diagnostic when retained by the repository
-CHECKSUMS.sha256
-~~~
-
-`CHECKSUMS.sha256` is optional source evidence, not a required portable/release artifact.
-
-Add `mcp.json` only if the capability genuinely requires MCP.
-
-## Consumer requirements
-
-Document only genuine capability/runtime requirements here. Do not list maintenance Node/pnpm/Mise/Docker unless the portable capability itself truly needs them.
-
-## Development
-
-~~~text
-mise install
-mise run bootstrap
-mise run doctor
-mise run ci:fast
-mise run ci:extended
-mise run release:check
-~~~
+A host must supply fresh authenticated authority, source and atomic persistence ports. No credentials or private organization values are included. Local synthetic PASS does not imply external adapter qualification, admission, release, Operator E2E or Production Ready.
