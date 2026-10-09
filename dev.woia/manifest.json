@@ -1,7 +1,7 @@
 {
   "schema": "dev.woia.provider-manifest/v1",
   "name": "woia-communications",
-  "version": "0.5.6",
+  "version": "0.5.7",
   "capability": "communications",
   "authoring_profile": "thin",
   "origin": "native",
