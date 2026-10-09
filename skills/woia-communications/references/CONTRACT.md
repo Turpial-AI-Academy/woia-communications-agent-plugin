@@ -1,6 +1,5 @@
 # Communications contract
 
-Source: WOIA Real Estate eb0a7278188b2f9968e21ed4299f08184d864cac; ADR-0026/0027/0029/0030 and docs/17,21,22,24,25.
 
 External ingress/send is Customer Service-only. Internal send requires host-resolved authenticated current Workforce membership for this organization, recipient, purpose and account. Vendor, external professional or an employee acting externally cannot be relabeled internal. Resolve Subject, ContactPoint, channel/account, current purpose/consent, exact content version and business origin before contact.
 
